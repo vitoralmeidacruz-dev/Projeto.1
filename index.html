@@ -1,37 +1,111 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pooppy</title>
-        <style>
-           header{
-            background-color: rgb(122, 12, 114);
-            color: rgb(28, 34, 192);
+        <title>Demon Slayer</title>
+       <style> 
+        header{
+            background-color:#1E1E1E;
+            color: #F5F5F5;
             text-align: center;
             max-width: 800px;
-            margin: auto;
+            margin: 0 auto;
             padding: 16px;
-            border: 2px solid ;
-           }
-           img{
-            width: 800px;
-            height: 800px;
-            
-           }
-        </style>  
+            border: 2px solid #424242;
+        }
+        main{
+            background-color:#1E1E1E;
+            color: #F5F5F5;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+            border: 2px solid #424242;
+        }
+
+        h2{
+            color:#29B6F6;
+        }
+
+        h1{
+            color: #4FC3F7;
+        }
+
+       </style>
     </head>
+
     <body>
         <header>
-            <h1>Pooppy Playtime</h1>
-            <p>Vamos falar sobre como zera Pooppy Playtime</p>
-        </header>    
+          <h1>Demon Slayer</h1> 
+        </header>
         <main>
-            <img src="imagem-blog.png" alt="Personagens do jogo Poppy Playtime reunidos no cenário de uma fábrica sombria com esteiras e tubulações. Ao centro estão Huggy Wuggy, o monstro azul de pelos e dentes afiados, e Mommy Long Legs, a figura rosa de braços e pernas longas. Ao redor estão Kissy Missy, a boneca Poppy, PJ Pug-a-Pillar e outros brinquedos da franquia. Na parte inferior, destaca-se o logotipo 'Poppy Playtime'.">
-             <h2>Meu capítulo 5,Quando eu to jogando</h2>
-             <p>Por:Vitor Manoel</p>
-             <p>Fala rapaziada,Hoje vou ensina a como zera o game, e também como fazer bugues</p>
-        </main>
-    </body>
+            <article>
+                <h2>O que é Demon Slayer?</h2>
+                <p>Demon Slayer: Kimetsu no Yaiba é um anime e mangá de ação, aventura e fantasia criado por Koyoharu Gotouge. A história acompanha Tanjiro Kamado, um jovem bondoso que vive com sua família nas montanhas. Após um ataque de demônios, sua família é morta e sua irmã Nezuko se transforma em um demônio. A partir desse momento, Tanjiro inicia uma jornada para encontrar uma cura para sua irmã e derrotar os demônios responsáveis pela tragédia.
+                </p>
+            </article>
+            <article>
+          <h1>Personagens Principais</h1> 
+
+          <p>Tanjiro Kamado
+            
+            Tanjiro é o protagonista da história. Ele é determinado, corajoso e sempre busca proteger as pessoas. Seu principal objetivo é encontrar uma forma de transformar Nezuko novamente em humana.
     
+    Nezuko Kamado
+    
+    Nezuko é a irmã mais nova de Tanjiro. Mesmo após se tornar um demônio, ela mantém seus sentimentos humanos e luta ao lado do irmão contra as forças do mal.
+    
+    Zenitsu Agatsuma
+    
+    Zenitsu é um espadachim que utiliza a Respiração do Trovão. Apesar de ser medroso, demonstra grande habilidade em combate quando enfrenta situações perigosas.
+    
+    Inosuke Hashibira
+    
+    Inosuke é um guerreiro impulsivo e competitivo que usa duas espadas. Ele foi criado nas montanhas e possui um estilo de luta único e agressivo.
+
+<p>
+    
+            </article>
+            <article>
+                <h2>Os Hashiras</h2>
+                <p>Os Hashiras são os guerreiros mais poderosos da Corporação dos Caçadores de Demônios. Eles possuem habilidades extraordinárias e são responsáveis por enfrentar os inimigos mais perigosos. Alguns dos Hashiras mais conhecidos são Giyu Tomioka, Kyojuro Rengoku, Shinobu Kocho e Muichiro Tokito.
+                </p>
+            </article>
+            <article>
+                <h2>Curiosidades</h2>
+                <p> O anime estreou em 2019 a obra foi criada por Koyoharu Gotouge, Demon Slayer se tornou um dos animes mais populares do mundo a série é conhecida por suas cenas de ação e animação de alta qualidade, a história mistura aventura, amizade, coragem e superação.
+                </p>
+            </article>
+            <article>
+                <h2>Conclusão</h2>
+                <p>Demon Slayer conquistou milhões de fãs ao redor do mundo por sua emocionante história, personagens marcantes e batalhas impressionantes. A jornada de Tanjiro e seus amigos mostra a importância da determinação, da amizade e da esperança diante das dificuldades.
+                </p></main>
+            </article>
+            <button>👍​ <span>0</span></button>
+            <button>​👎​​ <span>0</span></button>
+        </main>     
+    </body>
+
+    <script>
+        const botoes = document.querySelectorAll("button");
+
+        botoes.forEach(function(botao){
+            let curtiu = false
+            botao.addEventListener("click", botaoClicado);
+            function botaoClicado(){
+                console.log("fui clicado");
+                let texto = botao.querySelector("span");
+                if (curtiu === false){
+                    texto.textContent++;
+                    curtiu = true;
+                }else{
+                    texto.textContent--;
+                    curtiu = false;
+                }
+            }
+
+        })
+        
+
+    </script>
 </html>
